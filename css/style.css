@@ -118,6 +118,7 @@ button:focus {
 ============================================================================================ */
 .gallery_area {
   background-color: #eeee;
+  /*height: 500px;*/
 }
 .main_title {
   text-align: center;
@@ -2467,6 +2468,52 @@ button:focus {
 /*----------------------------------------------------*/
 /* Gallery Area css
 ============================================================================================ */
+
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  color: #ea2c58;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+*/
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+
 .gallery_inner {
   margin-bottom: -30px;
 }
@@ -2575,6 +2622,22 @@ button:focus {
 }
 
 /*============== End Elements Area css ================*/
+
+/*----------covid-19-images--------------*/
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 /*==============Elements Button Area css ================*/
 .elements_button {
   background: #f9f9ff;
@@ -4122,6 +4185,21 @@ h1, h2, h3, h4, h5, h6 {
 .contact_form .submit_btn {
   margin-top: 20px;
   cursor: pointer;
+}
+
+/*-------------video--------------*/
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:58.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 /* Contact Success and error Area css
